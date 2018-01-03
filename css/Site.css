@@ -1,0 +1,164 @@
+﻿body {
+    padding-top: 200px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1.bigger {
+    font-size: 72px;
+    font-weight: bold;
+}
+.top.row{
+    padding-bottom: 600px;
+}
+
+.middle.row{
+    padding-bottom: 200px;
+}
+
+.bottom.row{
+    padding-bottom: 200px;
+}
+
+::selection {
+    background-color: #f7971c;
+}
+
+.vertical-align {
+  display: flex;
+}
+
+.vertical-align > .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-inverse .navbar-toggle {
+    color: #9d9d9d;
+    border-color: #9d9d9d;
+}
+
+.navbar-brand.logo {
+    padding: 10px 10px;
+}
+
+.navbar-brand>img {
+    max-height: 31px;
+}
+
+@media (max-width: 767px) {
+    .navbar-brand>img {
+        display: none;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.icon {
+    text-align: center;
+}
+
+.links {
+    padding-bottom: 5px;
+    padding-top: 25px;
+    border-top: solid 1px #eee;
+}
+
+.links-header {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.links-header h2 {
+    max-height: 33px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.links h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #f7971c;
+}
+
+.link {
+    border: solid 1px #eee;
+    padding: 20px 30px;
+    margin-bottom: 20px
+}
+
+.links a {
+    color: #333;
+}
+
+.links a:hover, a:focus {
+    text-decoration: none;
+}
+
+.link:hover, .link:focus {
+    box-shadow: 2px 2px 10px #eee;
+}
+
+ .link:hover:active, .link:focus:active {
+     text-decoration: none;
+}
+
+.btn-default:hover, .btn-default:focus {
+    background-color: #f7971c;
+    border-color: #C46400;
+}
+
+.btn-default:hover:active, .btn-default:focus:active {
+    background-color: #DE7E03;
+    border-color: #DE7E03;
+}
+
+.features {
+    background-color: #f7f7f7;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    border-top: solid 1px #eee;
+    border-bottom: solid 1px #eee;
+}
+
+.features h2 {
+    text-align: center;
+}
+
+.features h3 {
+    padding-bottom: 5px;
+    border-bottom: solid 1px #f7971c;
+}
+
+.features-description {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.feature {
+    background-color: #fff;
+    border: solid 1px #eee;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    height: 200px;
+}
+
+.footer {
+    color: #fff;
+    background: #272727;
+    padding-top: 20px;
+}
+
+.footer-social {
+    text-align: right;
+}
+
+.footer-social .fa {
+    color: white;
+}
