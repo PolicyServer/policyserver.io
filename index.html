@@ -18,13 +18,21 @@
         <div class="row top">
             <div class="col-md-12">
                 <h1 class="bigger">Identity != Permissions</h1>
+            </div>
+        </div>
 
+        <div class="row top-text">
+            <div class="col-md-12">
                 <p>
                     Authorization is hard - and authorization is often conflated with authentication and identity. 
-                    Many vendors try to sell you "Identity and Access Management" as a single product. We think that this is wrong, and those two concerns must be clearly separared.                  
+                    Many vendors try to sell you "Identity and Access Management" as a single product.
+                    We think that this is wrong, and these two concerns should be clearly separared.                  
                 </p>
                 <p>
-                    This most often lead to problematic situations down the line - we wrote a popular <a href="https://leastprivilege.com/2016/12/16/identity-vs-permissions/">blog post</a> that expressed our opinions by the time.
+                    As your software becomes more complex, not maintaining this separation leads to problems.
+                    Back in 2016 we wrote a 
+                    <a target="_blank" href="https://leastprivilege.com/2016/12/16/identity-vs-permissions/">blog post</a> 
+                    that expressed this concern.
                 </p>
             </div>
         </div>
@@ -32,28 +40,73 @@
         <div class="row middle">
             <div class="col-md-12">
                 <h1 class="bigger">Identity + Permissions == Authorization</h1>
-                <p>We think identity must be input to authorization system to produce the actual authorization policies. 
-                    While there are many ways to model authorization, we found that the concept of roles and permissions are the most prevalent. Please watch the below recording from NDC Oslo 2017 to get the full background.</p>
+            </div>
+        </div>
+
+        <div class="row middle-text">
+            <div class="col-md-12">
+                <p>
+                    Identity is universal, whereas permissions are application specific. 
+                    This is why the identity system should not define permissions.
+                </p>
+                <p>
+                    Instead, identity should be the input to an authorization system.
+                    The combination of identity and an application-specific policy produces the 
+                    actual permissions for the application.
+                </p>
+                <p>
+                    While there are many ways to model authorization, we found that the concept of roles and permissions to be the most prevalent.
+                    Please watch the below recording from NDC Oslo 2017 to get the full background.
+                </p>
             </div>
         </div>
 
         <div class="row bottom">
             <div class="col-md-12">
                 <iframe src="https://player.vimeo.com/video/223982185" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                <p><a href="https://vimeo.com/223982185">implementing authorization in web applications and APIs - Dominick Baier &amp; Brock Allen</a> from <a href="https://vimeo.com/ndcconferences">NDC Conferences</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
             </div>
         </div>
 
-        <div class="row middle">
-                <div class="col-md-12">
-                    <h1 class="bigger">PolicyServer</h1>
-                    <p>This all lead to prototyping "PolicyServer" - an implementation of the above pattern.
-
-                            We decided to split PolicyServer into two parts - a free OSS version that has all the necessary patterns and libraries to achieve the separatio of authentication and authorization - and a commercial version which deals with more advanced scenarios around distribution and management.</p>
-                </div>
+        <div class="row bottom">
+            <div class="col-md-12">
+                <h1 class="bigger">PolicyServer</h1>
             </div>
-    </div>
+        </div>
+        <div class="row bottom-text">
+            <div class="col-md-12">
+                <p>
+                    This all leads to "PolicyServer" - an implementation of the
+                    above pattern.
+                </p>
+                <p>
+                    We decided to provide two versions of PolicyServer.
+                </p>
+                <p>
+                    One version is a free OSS version that has all the necessary 
+                    patterns and libraries to achieve the separation of authentication and authorization.
+                </p>
+                <p>
+                    The other version is a commercial product which deals with more advanced scenarios
+                    around policies, distribution, and management.
+                </p>
+            </div>
+        </div>
 
+        <div class="row bottom-links">
+            <div class="col-xs-6">
+                <p>
+                    <a href='http://solliance.net/policyserver'><img src="images/policyserver.png"></a>
+                </p>
+                <p>Commercial PolicyServer Product</p>
+            </div>
+            <div class="col-xs-6">
+                <p>
+                    <a href='https://github.com/policyserver/policyserver.local'><img src="images/github.png"></a>
+                </p>
+                <p>Free, Open Source PolicyServer</p>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
