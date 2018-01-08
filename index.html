@@ -24,9 +24,9 @@
         <div class="row top-text">
             <div class="col-md-12">
                 <p>
-                    Authorization is hard - and authorization is often conflated with authentication and identity. 
-                    Many vendors try to sell you "Identity and Access Management" as a single product.
-                    We think that this is wrong, and these two concerns should be clearly separated.                  
+                    Authorization is hard - and authorization is often conflated with authentication and identity.
+                    We think that tightly coupling "Identity and Access Management" in a single solution is the wrong approach. 
+                    These two concerns should be clearly separated.
                 </p>
                 <p>
                     As your software becomes more complex, not maintaining this separation leads to problems.
@@ -52,7 +52,7 @@
                 <p>
                     Instead, identity should be one of the inputs to an authorization system.
                     The combination of identity and an application-specific policy produces the 
-                    actual permissions for the application.
+                    actual permissions for an application.
                 </p>
                 <p>
                     While there are many ways to model authorization, we found that the concept of roles and permissions to be the most prevalent.
@@ -75,18 +75,19 @@
         <div class="row bottom-text">
             <div class="col-md-12">
                 <p>
-                    This leads to "PolicyServer", which is an implementation of the above pattern.
+                    This is why we have developed "PolicyServer", which is an implementation of the above pattern.
                 </p>
                 <p>
-                    We decided to provide two versions of PolicyServer.
+                    We offer two versions of PolicyServer.
                 </p>
                 <p>
                     One version is a free OSS version that has all the necessary 
-                    patterns and libraries to achieve the separation of authentication and authorization.
+                    patterns and libraries to achieve the separation of authentication and authorization for a single application.
                 </p>
                 <p>
-                    The other version is a commercial product which deals with more advanced scenarios
-                    around policies, distribution, and management.
+                    The other version is a commercial product which supports multiple applications,
+                    advanced scenarios (including policy hierarchies), a central repository for storing policies, 
+                    and a management UI and API.
                 </p>
             </div>
         </div>
@@ -94,15 +95,15 @@
         <div class="row bottom-links">
             <div class="col-xs-6">
                 <p>
-                    <a href='http://solliance.net/policyserver'><img src="images/policyserver.png"></a>
-                </p>
-                <p>Commercial PolicyServer Product</p>
-            </div>
-            <div class="col-xs-6">
-                <p>
                     <a href='https://github.com/policyserver/policyserver.local'><img src="images/github.png"></a>
                 </p>
                 <p>Free, Open Source PolicyServer</p>
+            </div>
+            <div class="col-xs-6">
+                <p>
+                    <a href='http://solliance.net/policyserver'><img src="images/policyserver.png"></a>
+                </p>
+                <p>Commercial PolicyServer Product</p>
             </div>
         </div>
     </div>
